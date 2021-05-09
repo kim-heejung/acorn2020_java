@@ -22,7 +22,8 @@ public class MyMain01 {
 		// 75~100 사이의 랜덤한 정수 얻어내기
 		int num4=ran.nextInt(26)+75;
 		// -15~15 사이의 랜덤한 정수
-		int num5=ran.nextInt(31)-15; // ( ) 안에 숫자가 나올 정수의 갯수이고 +, - 가 그 값을 만들기 위한 수라고 생각하면 됨
+		int num5=ran.nextInt(31)-15; 
+		// ( ) 안에 숫자가 나올 정수의 갯수이고 +, - 가 최대값을 만드는 용도로 사용된다고 생각하면 됨.
 		System.out.println("num1:"+num1);
 		System.out.println("num2:"+num2);
 		System.out.println("num3:"+num3);
