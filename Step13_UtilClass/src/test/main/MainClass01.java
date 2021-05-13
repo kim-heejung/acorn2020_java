@@ -6,7 +6,9 @@ public class MainClass01 {
 	public static void main(String[] args) {
 		// String type  을 저장할수 있는 index 로 관리되는 목록(List) 객체 
 		ArrayList<String> names=new ArrayList<String>();
-		// String type 의 참조값 저장하기 
+		// ArrayList : 어떤 데이터의 참조값을 순서있게 저장하는 class.
+		// ArrayList 의 < > 안에는 Generic type 을 적어야함. 기본 데이터 type 을 적을 수 없음.
+		// String type 의 참조값 저장하기
 		names.add("김구라");
 		names.add("해골");
 		names.add("원숭이");
@@ -16,7 +18,7 @@ public class MainClass01 {
 		String name1=names.get(0); // 0번방
 		String name2=names.get(1); // 1번방
 		String name3=names.get(2); // 2번방
-		
+
 		// 특정 방의 값 수정(덮어쓰기)
 		names.set(0, "이정호"); // 0번방 수정
 		
@@ -25,6 +27,8 @@ public class MainClass01 {
 		
 		// 모든 깨끗이 방 삭제
 		names.clear();
+		
+		// add(), size(), get() 알아두기. 제일 많이 씀.
 	}	
 }
 

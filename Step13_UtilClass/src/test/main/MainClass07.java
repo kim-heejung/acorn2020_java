@@ -43,9 +43,11 @@ public class MainClass07 {
 		List<MemberDto> a = list;
 		MemberDto b = list.get(0);
 		int c = list.get(0).getNum();
+		// list => List type, get(0) 까지 => MemberDto type, getNum() 까지 => int type.
 		String d = list.get(0).getName();
 		String e = list.get(0).getAddr();
 		int f = list.get(0).getName().length();
+		// length() 까지 => int type.
 	}
 }
 

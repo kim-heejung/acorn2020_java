@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 public class MainClass01 {
 	public static void main(String[] args) {
 		//JFrame 객체 생성하고 
-		JFrame f=new JFrame("Hello Frame");
+		JFrame f=new JFrame("Hello Frame"); // 생성자의 인자로 쓰이는게 제목으로 설정됨.
 		//초기 위치와 크기 지정 
 		f.setBounds(100, 100, 500, 500);
 		//프레임을 닫았을때 자동으로 프로세스 종료 되도록 
@@ -23,7 +23,7 @@ public class MainClass01 {
 		//프레임이 보이도록 한다. 
 		f.setVisible(true);
 		
-		new MyFrame("나만의 프레임");
+		//new MyFrame("나만의 프레임");
 	}
 	
 	public static class MyFrame extends JFrame{

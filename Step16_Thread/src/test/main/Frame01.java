@@ -51,6 +51,11 @@ public class Frame01 extends JFrame implements ActionListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		/*
+		 * 알림창이 떴을 때, 10초가 진행되고 있을 때는 실행순서가 해당위치에 있기 때문에 다른 동작을 할 수 없음.
+		 * thread : 위 실행순서의 흐름, 작업단위.
+		 */
 	}
 }
 

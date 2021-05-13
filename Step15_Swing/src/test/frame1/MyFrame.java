@@ -22,7 +22,7 @@ public class MyFrame extends JFrame{
 		
 		JButton btn2=new JButton("버튼2");
 		//버튼의 위치와 크기를 한번에 지정하기 
-		btn2.setBounds(120, 10, 100, 30);
+		btn2.setBounds(120, 10, 100, 30); // setLocation(), setSize() 를 대체해 setBounds() 를 쓸수 있음.
 		add(btn2); //프레임에 btn2 추가 하기
 		
 		JButton btn3=new JButton("버튼3");

@@ -17,11 +17,11 @@ public class MainClass17 {
 			//읽어낸 byte 를 출력할 객체 
 			fos=new FileOutputStream("c:/acorn2020/myFolder/copied2.jpg");
 			//byte 데이터를 읽어낼 방1024 개 짜리 배열객체 생성
-			byte[] buffer=new byte[1024];
+			byte[] buffer=new byte[1024]; // buffer 에는 참조값이 들어있음, 1024byte = 1kb.
 			//반복문 돌면서 읽어내기
 			while(true) {
 				//byte[] 객체를 전달해서 읽어내고 리턴되는 데이터는 읽은 byte 의 갯수가 리턴된다.
-				int readedByte=fis.read(buffer);
+				int readedByte=fis.read(buffer); // 배열의 참조값을 전달.
 				System.out.println(readedByte);
 				if(readedByte==-1) {//더이상 읽을 byte 가 없다면 
 					break;//반복문 탈출

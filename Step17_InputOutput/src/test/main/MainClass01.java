@@ -22,6 +22,10 @@ public class MainClass01 {
 			e.printStackTrace();
 		}
 	}
+	// input : 메모리의 정보를 입력하는 것.
+	// output : 메모리의 정보를 출력하는 것.
+	// 메모리 => variable 정도라고 생각하면 됨.
+	// byte : 2진수 8자리로 이루어진 정보를 나타내는 단위.
 }
 
 

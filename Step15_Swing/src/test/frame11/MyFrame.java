@@ -13,7 +13,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class MyFrame extends JFrame implements ActionListener{
+public class MyFrame extends JFrame implements ActionListener{ 
+	// JFrame 을 상속을 받아서 만들어야지 프레임 창이 나타남.
 	//필드
 	JTextField tf_num1, tf_num2;
 	JLabel label_result;
@@ -26,9 +27,9 @@ public class MyFrame extends JFrame implements ActionListener{
 		
 		//JPanel
 		JPanel topPanel=new JPanel();
-		topPanel.setBackground(Color.YELLOW);
+		topPanel.setBackground(Color.YELLOW); // ( ) 안에는 Color 클래스의 YELLOW 필드.
 		//Panel 을 북쪽에 배치하기 
-		add(topPanel, BorderLayout.NORTH);
+		add(topPanel, BorderLayout.NORTH); // ( ) 안에는 BorderLayout 클래스의 NORTH 필드.
 		
 		//JTextField 객체를 만들에서 JPanel 에 추가하기 
 		tf_num1=new JTextField(10);
@@ -54,6 +55,8 @@ public class MyFrame extends JFrame implements ActionListener{
 		
 		//버튼에 리스너 등록하기
 		plusBtn.addActionListener(this);
+		// class MyFrame extend JFrame
+		// 	implement ActionListener{ } 했기 때문에 this 가 MyFrame 이 됨.
 		minusBtn.addActionListener(this);
 		multiBtn.addActionListener(this);
 		divideBtn.addActionListener(this);
@@ -80,13 +83,14 @@ public class MyFrame extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		try {
 			//JTextField 에 입력한 문자열을 읽어와서 숫자(실수)로 바꿔준다.
-			double num1=Double.parseDouble(tf_num1.getText());
+			double num1=Double.parseDouble(tf_num1.getText()); // getText() 는 문자열로 읽어옴.
 			double num2=Double.parseDouble(tf_num2.getText());
 			//연산의 결과값을 담을 지역 변수
 			double result=0;
 			//눌러진 버튼의 command 읽어오기
-			String command=e.getActionCommand();
-			if(command.equals("plus")) {
+			String command=e.getActionCommand(); // command 를 읽어오기 위해 ActionEvent 의 getActionCommand() 메소드의 도움을 받음.
+			if(command.equals("plus")) { // 자바에서는 == 연산자를 사용하면 안됨.
+				// equslsgnoreCase() : 대소문자를 무시하고 같은지 비교.
 				result=num1+num2;
 			}else if(command.equals("minus")) {
 				result=num1-num2;
@@ -99,7 +103,8 @@ public class MyFrame extends JFrame implements ActionListener{
 			label_result.setText(Double.toString(result));
 		}catch(Exception exe) {
 			JOptionPane.showMessageDialog(this, "숫자 형식으로 입력해 주세요");
-		}
+		} 
+		// try, catch 로 묶어 Exception 을 사용했기 때문에 문자열로 입력 시 "숫자 형식으로 입력해 주세요" 라는 경고창이 뜨는 것임.
 	}
 }
 

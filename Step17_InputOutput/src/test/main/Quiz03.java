@@ -12,11 +12,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import javax.swing.JButton;
-import javax.swing.JFileChooser;
+import javax.swing.JFileChooser; // 오픈 누를 시 뜨는 창.
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import javax.swing.JMenu; // 메뉴바 안에 메뉴
+import javax.swing.JMenuBar; // 상단의 메뉴바
+import javax.swing.JMenuItem; // 메뉴 클릭시 아래로 펼쳐지는 메뉴 목록
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -65,7 +65,7 @@ public class Quiz03 extends JFrame implements ActionListener{
 		mb.add(menu1);
 		mb.add(menu2);
 		//프레임에 메뉴바 장착
-		setJMenuBar(mb);
+		setJMenuBar(mb); // JFrame 의 메소드.
 		
 		//텍스트 area 를 프레임의 가운데에 배치 
 		area=new JTextArea();
@@ -89,17 +89,18 @@ public class Quiz03 extends JFrame implements ActionListener{
 		if(command.equals("new")) { // 아이템 New 를 눌렀을때
 			area.setText("");//문자열 삭제
 			area.setVisible(true); //JTextArea 를 보이게 하고 
-			area.grabFocus(); //포커스를 준다. 
+			area.grabFocus(); //포커스를 준다 => 커서 깜빡거리게 됨.
 		}else if(command.equals("open")) {// 아이템 Open 을 눌렀을때
 			area.setText("");
-			openContent();
+			openContent(); 
 		}else if(command.equals("save")) {// 아이템 Save 를 눌렀을때 
 			saveContent();
 		}
 	}
 	//파일에 있는 문자열을 읽어와서 출력하는 작업을 하는 메소드
 	public void openContent() {
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
+		JFileChooser fc=new JFileChooser("c:/acon202104/myFolder"); // JFileChooser( ) 안 주소는 시작 위치.
+		
 		//파일을 open 하는 다이얼로그 띄우기 
 		int result=fc.showOpenDialog(this);	
 		if(result == JFileChooser.APPROVE_OPTION) {
@@ -134,7 +135,7 @@ public class Quiz03 extends JFrame implements ActionListener{
 	public void saveContent() {
 		//JTextArea 에 입력한 문자열을 읽어온다.
 		String content=area.getText();
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
+		JFileChooser fc=new JFileChooser("c:/acorn202104/myFolder");
 		int result=fc.showSaveDialog(this);	
 		if(result == JFileChooser.APPROVE_OPTION) {
 			//새로 만들 예정인 File 객체 의 참조값 얻어오기 

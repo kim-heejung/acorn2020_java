@@ -28,6 +28,7 @@ public class MyFrame extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				//System.out.println("전송 합니다~");
 				JOptionPane.showMessageDialog(MyFrame.this, "전송합니다~");
+				// showMessageDiaLog( ) 안에 인자로는 frame 의 참조값, 문자열을 적어줘야함.
 			}
 		};
 		

@@ -49,7 +49,8 @@ public class Frame03 extends JFrame implements ActionListener{
 		//Thread 객체를 생성하면서 생성자의 인자로 전달한다.
 		Thread t=new Thread(r);
 		//start() 메소드를 호출해서 새로운 스레드를 시작한다.
-		t.start();
+		t.start(); // start() 메소드는 run() 메소드 리턴과 상관없이 바로 리턴하기 때문에
+		// 아래의 내용이 바로 콘솔창에 출력된다.
 		System.out.println("새로운 스레드를 시작 했습니다.");
 	}
 }

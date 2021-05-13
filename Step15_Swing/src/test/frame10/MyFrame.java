@@ -37,7 +37,8 @@ public class MyFrame extends JFrame
 	public MyFrame() {
 		setLayout(new BorderLayout());
 		//문자열 한줄을 입력할수 있는 JTextField
-		inputMsg=new JTextField(10);
+		inputMsg=new JTextField(10); 
+		// 생성자를 활용해서 inputMsg 에 값을 넣어주지않으면 inputMsg 가 null 이기 때문에  모델 목록에 String 이 추가되지 않고 오류가 남.
 		inputMsg.addKeyListener(this);
 		
 		JButton sendBtn=new JButton("전송");
@@ -103,7 +104,7 @@ public class MyFrame extends JFrame
 		//눌러진 버튼의 command  를 읽어온다.
 		String command=e.getActionCommand();
 		if(command.equals(COMMAND_SEND)) {//전송 버튼을 눌렀을때
-			send();
+			send(); // this. 이 생략 되어있음.
 		}else if(command.equals(COMMAND_REMOVE)) {//삭제 버튼을 눌렀을때
 			//JList 객체에게 선택된 item 이 있는지 있다면 몇번째 아이템이 선택되었는지
 			//물어 봐야 한다. (메소드를 이용해서 알아낸다)
