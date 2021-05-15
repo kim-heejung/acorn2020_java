@@ -15,6 +15,6 @@ public class ClientMain {
 				if(socket!=null)socket.close();
 			}catch(Exception e) {}
 		}
-		System.out.println("main 메소드가 종료 됩니다.");
+		System.out.println("main 메소드가 종료 됩니다."); // 필기 테스트1
 	}
 }
