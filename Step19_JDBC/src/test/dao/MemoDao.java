@@ -21,6 +21,11 @@ import test.util.DBConnect;
  *   
  */
 public class MemoDao {
+	/*
+	 * 안에 내용을 직접 작성할 수 있어야함.
+	 * dbselect dbupdate 사용.
+	 */
+	
 	//자신의 참조값을 저장할 private 필드
 	private static MemoDao dao;
 	
@@ -31,6 +36,7 @@ public class MemoDao {
 	public static MemoDao getInstance() {
 		if(dao==null) {//최초 호출되면 null 이므로 
 			dao=new MemoDao();//객체를 생성해서 static 필드에 담는다. 
+			System.out.println("최초로 사용될 때 MemoDao 객체를 생성했습니다.");
 		}
 		return dao;
 	}

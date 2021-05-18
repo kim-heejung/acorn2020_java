@@ -18,6 +18,16 @@ public class MainClass05 {
 	}
 }
 
+/*
+ * data type 종류
+ * 
+ * 1. primitive data type (기본 데이터 타입) : 실제 값을 가지고 있음.
+ * -byte, short, int, long, float, double, boolean, char.
+ * 
+ * 2. reference data type (참조 데이터 타입) : 참조값 (=id 값) 을 가지고 있음.
+ * -String type 등.
+ * 무한대로 많음.
+ */
 
 
 

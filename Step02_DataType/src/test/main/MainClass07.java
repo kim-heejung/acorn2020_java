@@ -9,6 +9,8 @@ public class MainClass07 {
 		//참조 데이터 type 이 들어갈 빈 변수는 null 을 대입 해서 만든다. 
 		String name1=null;
 		
+		// 기본값으로 숫자 type 변수는 0, boolean type 변수는 false, 참조 데이터 type 변수는 null 을 대입하면 됨.
+		
 		System.out.println("main 메소드가 종료 됩니다.");
 	}
 }

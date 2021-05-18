@@ -23,7 +23,11 @@ public class MainClass05 {
 		
 		//static 메소드 안에서 this 는 의미도 없고 사용불가 
 		//System.out.println(this.yourName);
+		
+		// static 자원 안에서 일반 필드는 this 로 접근 불가능.
+		// static 은 new 하지 않아도 클래스명. 찍어서 접근 가능.
 	}
+	
 }
 
 

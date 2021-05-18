@@ -16,7 +16,7 @@ package test.mypac;
  *    모두 오버라이드(재정의) 해야한다. 
  */
 public abstract class Weapon {
-	// 무기 작동을 준비하는 메소드.
+	//무기 작동을 준비하는 메소드.
 	public void prepare() {
 		System.out.println("무기 작동을 준비 합니다.");
 	}

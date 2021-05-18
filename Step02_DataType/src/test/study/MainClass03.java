@@ -17,5 +17,7 @@ public class MainClass03 {
 		char ch3=d.charAt(2);
 		// 참조값에 . 찍어서 toCharArray() 메소드를 호출하면 char 배열이 리턴된다.
 		char[] chars=d.toCharArray();
+		
+		// 참조 data 값은 . 을 찍어서 메소드를 사용하거나 필드를 참조할 수 있음.
 	}
 }

@@ -9,8 +9,9 @@ public class MainClass02 {
 		
 		//국어 점수와 영어 점수의 평균을 구해서 변수에 담고 그 결과를 콘솔창에 출력해 보세요.
 		
-		// int type  과  double type 을 연산하면 결과는 double type 이다. 
+		//int type 과  double type 을 연산하면 결과는 double type 이다. 
 		double ave=(kor+eng)/2.0;
+		// 결과값이 실수이므로 double type 을 사용해 주어야 함.
 		
 		System.out.println("평균:"+ave);
 	}

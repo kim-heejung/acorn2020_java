@@ -18,7 +18,7 @@ public class MainClass02 {
 		 */
 		
 		Weapon s=new Shield(); // 보통은 추상클래스 type 으로 받음.
-		MainClass02.useWeapon(s); // MainClass02 에 있는 useWeapon(Weapon s) 메소드 
+		MainClass02.useWeapon(s); // MainClass02 에 있는 useWeapon(Weapon s) 메소드 .
 		/* 
 		 * Shield w=new Shield(); 으로 적어도 됨.
 		 * MainClass02.useWeapon(w) 으로 적어도 됨.
@@ -26,7 +26,7 @@ public class MainClass02 {
 		}
 		
 	
-	public static void useWeapon(Weapon s) { // 추상클래스의 참조값을 가져오기 위해선 
+	public static void useWeapon(Weapon s) { // 추상클래스의 참조값을 가져오기 위해서 ( ) 안에 Weapon s 가 적힘. 
 		s.prepare();
 		s.attack();
 	}

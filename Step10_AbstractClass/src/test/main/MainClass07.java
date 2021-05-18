@@ -10,7 +10,14 @@ public class MainClass07 {
 		 *  Weapon 추상 클래스를 상속받은 익명의 local inner class 
 		 *  의 생성자를 호출해서 Weapon type 의 참조값 얻어내서 지역변수 w1 에 담기 
 		 */
-		Weapon w1=new Weapon() {
+		Weapon w1=new Weapon() { 
+			/*
+			 * anonymous inner class.
+			 * Weapon() 뒤에 { } (중괄호) class 를 의미 => 익명의 class (anonymous class)
+			 * new 클래스이름() 적을 시 해당 클래스를 상속 받겠다는 뜻이며, 생성자를 호출하겠다는 뜻도 담고 있음. 
+			 * 추상 클래스의 참조값을 얻기위해 약식으로 작성한 방법.
+			 */
+			// 
 			@Override
 			public void attack() {
 				System.out.println("아무나 공격해요!");

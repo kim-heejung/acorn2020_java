@@ -12,18 +12,18 @@ public class MainClass03 {
 	public static void main(String[] args) {
 		//논리형 변수 선언과 동시에 값 대입하기
 		boolean isRun=true;
-		if(isRun) {
+		if(isRun) { // if : ( ) 안에 값이 true 면 실행.
 			System.out.println("달려요");
 		}
 		
 		//비교 연산의 결과로 얻어진 boolean 값 담기
 		boolean isGreater=10>1;
 		//논리 연산의 결과로 얻어진 boolean 값 담기
-		boolean result=true||false;
+		boolean result=true||false; // || 은 or 연산자.
 		
 		//한번 선언한 변수는 다시 선언 할수 없다.
 		//boolean result=false;
-		result=false; //변수에 다른 값을 대입 할수 있다(동일한 type 인 경우)
+		result=false; //동일한 type 인 경우 변수에 다른 값을 대입 할수 있다.
 		//다른 type 값은 변수에 담을 수 없다.
 		//result=10; 
 		
