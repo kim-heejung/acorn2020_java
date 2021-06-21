@@ -6,7 +6,7 @@ public class MainClass04 {
 	public static void main(String[] args) {
 		/*
 		 *  프로그래밍의 목적 : 무작위 정수를 얻어내고 싶다
-		 *  얻어내서 무얼하지? 그냥 콘솔창에 출력하고 싶다.
+		 *  얻어내서 무얼하지? 그냥 콘솔창에 출력하고 싶다
 		 */
 		//Random 객체를 생성해서 참조값을 지역변수에 담기
 		Random ran=new Random();
@@ -21,7 +21,7 @@ public class MainClass04 {
 		 *  얻어내서 무얼하나? 콘솔창에 출력한다.
 		 */
 		
-		//Random 객체는 이미 생성되어서 ran 이라는 지역변수에 담겨 있다. 
+		//Random 객체는 이미 생성되어서 ran 이라는 지역변수에 담겨 있다 
 		//다시 생성하지 않고 재 사용하기로~
 		int lottoNum=ran.nextInt(45)+1;
 		System.out.println(lottoNum);

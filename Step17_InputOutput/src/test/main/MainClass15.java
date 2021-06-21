@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class MainClass15 { // MainClass14 와 같지만 조금 더 꼼꼼한 코딩.
 	public static void main(String[] args) {
-		File memoFile=new File("c:/acon202104/myFolder/memo.txt");
+		File memoFile=new File("c:/acorn202104/myFolder/memo.txt");
 		//필요한 객체의 참조값을 담을 지역 변수를 미리 만든다.
 		FileReader fr=null;
 		BufferedReader br=null;
@@ -18,7 +18,7 @@ public class MainClass15 { // MainClass14 와 같지만 조금 더 꼼꼼한 코
 			}
 			//파일에서 문자열을 읽어들일 객체의 참조값을 미리 만들어둔 지역 변수에 담는다.
 			fr=new FileReader(memoFile); // try 구문 바깥쪽에서 실행시 인셉션 오류 생김.
-			br=new BufferedReader(fr); // fr, br 을 안에서만 선언해버리면 try 구문 안에서만 사용가능하기 때문에 밖에서 null 값을 미리 넣어준것.
+			br=new BufferedReader(fr);
 			while(true) {
 				//반복문 돌면서 문자열을 줄단위로(개행기호 기준) 읽어낸다.
 				String line=br.readLine();
@@ -36,7 +36,13 @@ public class MainClass15 { // MainClass14 와 같지만 조금 더 꼼꼼한 코
 				if(fr!=null)fr.close();
 				if(br!=null)br.close();
 			} catch (IOException e) {}
+			/*
+			 * fr, br 이 null 이면 nullPointException 이 발생해서 실행순서가 뛰니까
+			 * catch 문 예외 타입을 Exception 으로 적고, null 인지 한번 확인하는게 좋음.
+			 */
 		}
+		
+		//fr, br 지역변수는 사용범위를 넓혀주기 위에 try 구문 밖에서 null 값을 미리 넣어서 선언해줌.
 	}
 }
 

@@ -10,9 +10,6 @@ public class MyMain01 {
 		HandPhone p2=new HandPhone();
 		
 		SmartPhone p3=new SmartPhone();
-		// Phone < HandPhone < SmartPhone 
-		// 세가지가 하나의 참조값임 (같이 만들어짐) 
-		// Phone => this,  HandPhone, SmartPhone => super
 		p3.call();
 		p3.mobileCall();
 		p3.doInternet();

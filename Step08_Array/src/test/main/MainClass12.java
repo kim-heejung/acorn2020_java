@@ -21,7 +21,7 @@ public class MainClass12 {
 	}
 	
 	public static void doGame() {
-		//렌덤하게 출력할 문자열을 미리 배열에 담아 놓는다. 
+		//렌덤하게 출력할 문자열을 미리 배열에 담아 놓는다 
 		String[] items={"cherry", "apple", "banana", "melon", "7"};
 		//렌덤한 숫자를 얻어내기 위한 객체
 		Random ran=new Random();
@@ -41,7 +41,7 @@ public class MainClass12 {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			//.print() 메소드를 이용해서 개행 기호를 출력하지 않는다. 
+			//.print() 메소드를 이용해서 개행 기호를 출력하지 않는다
 			System.out.print("|\t"+items[nums[i]]+"\t|");
 		}
 		
@@ -49,9 +49,9 @@ public class MainClass12 {
 		System.out.println();
 		System.out.println();
 		
-		//부여할 점수를 미리 배열에 담아 놓는다. 
+		//부여할 점수를 미리 배열에 담아 놓는다
 		int[] points= {10, 20, 30, 40, 1000};
-		//nums 배열에 있는 3개의 숫자가 모두 같은지 비교해 본다.
+		//nums 배열에 있는 3개의 숫자가 모두 같은지 비교해 본다
 		if(nums[0]==nums[1] && nums[1]==nums[2]) {//3개가 모두 같은 경우
 			//점수를 부여해야 한다 . 몇점이지?
 			//nums  배열에 있는 숫자 3개가 다 같으므로 아무거나 하나를 읽어와서

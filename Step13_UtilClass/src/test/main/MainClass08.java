@@ -13,7 +13,7 @@ public class MainClass08 {
 		 *  여러개의 type 을 섞어서 담을거면 Object 로 지정하면 된다.
 		 */
 		Map<String, Object> map1=new HashMap<>();
-		map1.put("num", 1);
+		map1.put("num", 1); // 1 은 Integer 타입.
 		map1.put("name", "김구라");
 		map1.put("addr", "노량진");
 		/*
@@ -23,6 +23,8 @@ public class MainClass08 {
 		int num=(int)map1.get("num");
 		String name=(String)map1.get("name");
 		String addr=(String)map1.get("addr");
+		
+		// 대부분 put(), get() 메소드 많이 사용.
 	}
 }
 

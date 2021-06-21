@@ -13,7 +13,7 @@ public class MainClass03 {
 		
 		
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(5000); // 실행의 흐름을 5 초동안 잡아둠.
 			} catch (InterruptedException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -23,7 +23,7 @@ public class MainClass03 {
 		File f1=new File("c:/acon202104/myFolder/test.txt");
 		
 			try {
-				f1.createNewFile();
+				f1.createNewFile(); // 해당 경로에 test.txt 파일 생성.
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

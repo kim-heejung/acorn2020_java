@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class MainClass02 {
 	public static void main(String[] args) {
 		//정수를 저장할수 있는 가변 배열 객체 생성
-		ArrayList<Integer> nums=new ArrayList<Integer>();
+		ArrayList<Integer> nums=new ArrayList<Integer>(); 
+		// new ArrayList<Integet> 에 < > 안에는 생략 가능.
 		nums.add(10);
 		nums.add(20);
 		nums.add(30);
@@ -22,6 +23,10 @@ public class MainClass02 {
 		//배열 비우기 
 		nums.clear();
 	}
+	
+	/*
+	 * 기본데이터 타입은 클래스가 아니기 때문에 genericClass 로 지정이 안됨.
+	 */
 }
 
 

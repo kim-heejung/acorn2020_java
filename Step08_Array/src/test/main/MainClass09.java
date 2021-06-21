@@ -7,14 +7,14 @@ public class MainClass09 {
 		
 		/*  cherry, apple, banana, melon, 7 
 		 * 
-		 * 	5개의 문자열 중에서 3개가 한줄에 한번에 랜덤하게 출력되게 해 보세요.
+		 * 	5개의 문자열 중에서 3개가 한줄에 한번에 랜덤하게 출력되게 해 보세요
 		 *    예)  cherry | apple | cherry
 		 *         7 | apple | melon
 		 *         7 | 7 | 7
 		 *      
 		 */
 		
-		//렌덤하게 출력할 문자열을 미리 배열에 담아 놓는다. 
+		//렌덤하게 출력할 문자열을 미리 배열에 담아 놓는다
 		String[] items={"cherry", "apple", "banana", "melon", "7"};
 		//렌덤한 숫자를 얻어내기 위한 객체
 		Random ran=new Random();

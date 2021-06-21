@@ -15,10 +15,10 @@ public class MainClass05 {
 		//myName 은 non static 필드임으로 참조값으로 접근 가능  
 		System.out.println(new MainClass05().myName);
 		
-		// yourName 이라는 필드는 static 이므로 클래스명. 으로 접근 가능
+		//yourName 이라는 필드는 static 이므로 클래스명. 으로 접근 가능
 		System.out.println(MainClass05.yourName);
 		
-		// yourName 과 main() 메소드는 동일 클래스 내부에 있기 때문에 클래스명 생략 가능
+		//yourName 과 main() 메소드는 동일 클래스 내부에 있기 때문에 클래스명 생략 가능
 		System.out.println(yourName);
 		
 		//static 메소드 안에서 this 는 의미도 없고 사용불가 

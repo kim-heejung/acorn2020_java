@@ -16,15 +16,19 @@ public class Quiz01 {
 		System.out.println("저장할 문자열 입력:");
 		String str=scan.nextLine();
 		
-		File file1=new File("c:/acon202104/myFolder/quiz.txt");
+		File file1=new File("c:/acorn202104/myFolder/quiz.txt");
 		try {
-			// 파일이 존재하는지 알아내서
+			//파일이 존재하는지 알아내서
 			boolean isExist=file1.exists();
-			if(!isExist) { // 만일 존재하지 않는다면
-				file1.createNewFile(); // 파일을 새로 만든다.
+			if(!isExist) { //만일 존재하지 않는다면
+				file1.createNewFile(); //파일을 새로 만든다
 			}
-			// new FileWriter(File 객체, append 모드 여부)
-			// FileWriter fw=new FileWriter(file1, true);
+			/*
+			 * new FileWriter(File 객체, append 모드 여부)
+			 * FileWriter fw=new FileWriter(file1, true);
+			 * append 모드가 true 라는 것은 문자열의 누적 여부를 어떤걸로 할지 정한다, false 사용시 덮어쓰기 됨.
+			 * append 모드를 전달하지 않으면 false 가 default 값
+			 */ 
 			FileWriter fw=new FileWriter(file1, true);
 			//fw.write(str);
 			fw.append(str);

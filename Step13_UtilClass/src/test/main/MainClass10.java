@@ -10,6 +10,8 @@ public class MainClass10 {
 		map1.put("name", "김구라");
 		map1.put("isMan", true);
 		map1.put("phone", "010-1111-2222");
+		// 순서대로 담기지 않음.
+		// List, map 은 기본데이터 타입을 저장할 수 없고 참조값만 저장할 수 있음.
 		
 		//이름을 참조 하려면?
 		String name=(String)map1.get("name");

@@ -22,6 +22,10 @@ public class MainClass08 {
 	}
 	//MemberDto 객체를 인자로 전달 받아서 회원정보를 DB 에 저장하는 메소드 
 	public static void insert(MemberDto dto) {
+		/*
+		 * 인자로 각각 전달 받아서 사용할 수도 있지만 전달해야될 값이 많아지면 복잡해지기 때문에 
+		 * dto 를 사용하는 것이 좋음, Map<> 도 가능.
+		 */
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		try {

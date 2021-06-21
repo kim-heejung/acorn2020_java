@@ -15,6 +15,12 @@ public class MainClass02 {
 		 * 선생님 예제.
 		 * Weapon w=new Gun();
 		 * MainClass02.useWeapon(w);
+		 * 
+		 * 
+		 * public static void useWeapon(Weapon w) {
+		 * 	w.prepare();
+		 * 	w.attack();
+		 * }
 		 */
 		
 		Weapon s=new Shield(); // 보통은 추상클래스 type 으로 받음.
@@ -30,14 +36,7 @@ public class MainClass02 {
 		s.prepare();
 		s.attack();
 	}
-	/*
-	 * 
-	 * 선생님 예제.
-	 public static void useWeapon(Weapon w) {
-		w.prepare();
-		w.attack();
-	}
-	 */
+	
 }
 
 

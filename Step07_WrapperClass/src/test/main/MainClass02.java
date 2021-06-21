@@ -7,7 +7,7 @@ public class MainClass02 {
 		//참조 데이터 type Double
 		Double num2=10.2;
 		
-		//참조 데이터 type Double 이지만 마치 기본 데이터 type 과 같이 사용할수 있다.
+		//참조 데이터 type Double 이지만 마치 기본 데이터 type 과 같이 사용할수 있다
 		double result1=num2+10;
 		double result2=num1+num2;
 		Double result3=num1+num2;

@@ -31,7 +31,7 @@ public class MainClass07 {
 			}
 		};
 		
-		useWeapon(w1);
+		useWeapon(w1); // MainClass07. 생략 가능.
 		useWeapon(w2);
 		useWeapon(new Weapon() {
 			@Override

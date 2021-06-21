@@ -11,6 +11,7 @@ public class Computer {
 	public Computer(Cpu cpu) {
 		this.cpu=cpu;
 	}
+	// 생성자는 여러개 있을 수 있음 => 생성자 over loading (다중정의) 되어있다.
 	//메소드
 	public void doGame() {
 		if(this.cpu==null) {

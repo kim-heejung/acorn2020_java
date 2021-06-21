@@ -24,13 +24,15 @@ public class MainClass02 {
 			System.out.println(num2+" 를 "+num1+" 으로 나눈 나머지:"+result2);
 		}catch(NumberFormatException nfe) {
 			System.out.println("숫자 형식으로 입력 하세요.");
-		}catch(ArithmeticException ae) {
+		}catch(ArithmeticException ae) { 
+			// ArithmeticException 은 RuntimeException 을 상속받음. 
 			System.out.println("어떤 수를 0으로 나눌수는 없어요");
 		}catch(Exception e) {
 			System.out.println("Exception 이 발생했습니다.");
 		}finally {//예외가 발생 하던 안하던 반드시 실행이 보장되는 블럭
 			System.out.println("무언가 마무리 작업을 해요~");
 		}
+		// 모든 예외들은 Exception 을 상속 받음.
 		
 		System.out.println("main  메소드가 정상 종료 됩니다.");
 	}

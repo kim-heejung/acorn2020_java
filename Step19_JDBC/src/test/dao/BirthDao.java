@@ -1,4 +1,4 @@
-package test.dao;
+ package test.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -38,7 +38,7 @@ public class BirthDao {
 			//실행할 sql(INSERT OR UPDATE OR DELETE) 문 작성
 			String sql = "INSERT INTO birth"
 					+ " (num, name, birthday)"
-					+ " VALUES(birth_seq.NEXTVAL, ?, ?)";
+					+ " VALUES(birth_seq.NEXTVAL, ?, ?)"; // 인자로 전달되는 값을 ? 에 바인딩.
 			pstmt = conn.prepareStatement(sql);
 			// ? 에 바인딩할 내용이 있으면 여기서 한다.
 			
@@ -136,7 +136,8 @@ public class BirthDao {
 	// 한명의 생일 정보를 리턴하는 메소드
 	public BirthDto getData(int num) {
 		// Birth 객체의 참조값을 담을 지역변수 선언.
-		BirthDto dto=null;
+		BirthDto dto=null; 
+		// BirthDto 를 if 문안에서만 쓸 수있기 때문에 미리 생성해서 기본 값을 넣어놓음.  
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -174,13 +175,14 @@ public class BirthDao {
 			}
 		}
 		// BirthDto 객체의 참조값을 리턴해준다.
-		return dto;
+		return dto; // 값이 들어 가지 않았으면 null 이 될 수 있음.
 	}
 	// 모든 생일정보를 리턴하는 메소드
 	public List<BirthDto> getList(){
 		// BirthDto 객체를 누적시킬 ArrayList 객체를 미리 생성한다.
 		List<BirthDto> list=new ArrayList<>();
-		
+		// list 를 리턴해줘야 문법이 성립되므로 try, catch 문에 쓰면 exception 일어나면 return 값이 없으므로 밖에 적어주어야함.
+		// 작업 성공 여부는 list 의 size 메소드를 사용해서 0 인지 확인하면 됨, 한번도 누적 안되면 0 이므로.
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -198,13 +200,19 @@ public class BirthDao {
 			
 			while (rs.next()) {
 				//SELECT 된 결과를 여기서 추출해서 객체에 담는다. 
-				int num=rs.getInt("num");
+				/*int num=rs.getInt("num");
 				String name=rs.getString("name");
 				String birthday=rs.getString("birthday");
 				// BirthDto 객체에 한명의 생일 정보를 담고
 				BirthDto dto=new BirthDto(num, name, birthday);
 				// List 에 누적시킨다.
 				
+				list.add(dto);
+				*/
+				BirthDto dto=new BirthDto();
+				dto.setNum(rs.getInt("num"));
+				dto.setName(rs.getString("name"));
+				dto.setBirth(rs.getString("birth"));
 				list.add(dto);
 			}
 			
@@ -224,4 +232,5 @@ public class BirthDao {
 		return list;
 	}
 	// getData, getList 메소드는 dbselect.
+	  
 }

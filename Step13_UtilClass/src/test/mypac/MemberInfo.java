@@ -16,6 +16,11 @@ public class MemberInfo {
 		this.name=name;
 		this.addr=addr;
 	}
+	
+	/*
+	 * 필드는 특별한 이유가 아닌이상 비공개로 사용함,
+	 * 필드에서 사용하는 부품을 담고 있기 때문에 공개하면 잘못된 동작을 할 가능성이 있음
+	 */
 }
 
 

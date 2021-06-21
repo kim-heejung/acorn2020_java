@@ -17,7 +17,7 @@ public class MainClass05 {
 		};
 		String result2=j2.join("해", "골");
 		
-		Joinner j3=(first, second)->first+second;
+		Joinner j3=(first, second)->first+second; // 수행할 코드가 한줄 일때는 { } 도 생략 가능.
 		String result3=j3.join("원", "숭이");
 	}
 }

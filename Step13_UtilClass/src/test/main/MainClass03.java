@@ -25,9 +25,10 @@ public class MainClass03 {
 		System.out.println("----------");
 		
 		for(String tmp:msgs) {
-			// List<String> 이기 때문에 String. generic class 만 잘 적어주면 됨.
+			// List<String> 이기 때문에 String, generic class 만 잘 적어주면 됨.
 			System.out.println(tmp);
 		}
+		// 확장 for 문 : 배열에 있는것을 순서대로 참조해서 사용할 때 씀.
 	}
 }
 

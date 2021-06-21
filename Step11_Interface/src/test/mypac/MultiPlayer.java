@@ -3,7 +3,7 @@ package test.mypac;
 public class MultiPlayer implements Remocon, Drill{
 	@Override
 	public void hole() {
-		System.out.println("책상에 구멍을 뚤어요");
+		System.out.println("책상에 구멍을 뚫어요");
 	}
 	@Override
 	public void up() {

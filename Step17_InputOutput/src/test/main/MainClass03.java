@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class MainClass03 {
-	public static void main(String[] args) {
+ 	public static void main(String[] args) {
 		//InputStream is=System.in;
 		//InputStreamReader isr=new InputStreamReader(is);
 		//한번에 여러글자를 읽어들여서 String type 으로 리턴해주는 기능을 가지고 있는 객체

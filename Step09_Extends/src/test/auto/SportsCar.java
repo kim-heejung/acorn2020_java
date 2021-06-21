@@ -9,7 +9,7 @@ public final class SportsCar extends Car{
 		
 	}
 	//메소드
-	@Override
+	@Override // 생략해도 오류는 안나지만 override 했다는 표시.
 	public void drive() {
 		/*
 		 *  재정의(오버라이드) 한 부모 메소드를 호출해야 할지 말지는 

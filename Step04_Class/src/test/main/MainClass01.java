@@ -1,9 +1,9 @@
 package test.main;
 
-import test.mypac.Car; // Car 클래스 import!
+import test.mypac.Car; //Car 클래스 import!
 
 public class MainClass01 {
-	// run 했을때 실행 순서가 시작되는 특별한 main() 메소드 
+	//run 했을때 실행 순서가 시작되는 특별한 main() 메소드 
 	public static void main(String[] args) {
 		//Car 클래스를 이용해서 객체 생성하고 참조값을 지역 변수에 담기
 		Car car1=new Car(); // new Car() 객체 생성 시 new Car 가 참조값으로 바뀜.

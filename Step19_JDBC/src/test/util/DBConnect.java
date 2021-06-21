@@ -1,4 +1,4 @@
-package test.util;
+  package test.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,6 +26,15 @@ public class DBConnect {
 	public Connection getConn() {
 		return conn;
 	}
+	
+	/*
+	 *	DB connection 생성 시점에 connection (:데이터 베이스와 연결하는) 객체의 참조값을 얻어오는 것임.
+	 *	connection 객체의 참조값이 필요하면 new DBConnection().getConn() 해서 사용해주면 됨. 
+	 *
+	 *	getConn() 메소드가 connection 객체의 참조값을 리턴해주므로
+	 *	Connection a=new DBConnection().getConn(); 에서
+	 *	데이터 타입은 Connection 이 됨.
+	 */
 }
 
 

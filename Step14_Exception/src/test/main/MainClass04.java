@@ -18,6 +18,11 @@ public class MainClass04 {
 			
 			System.out.println(i+1+" 번째 작업중...");
 		}
+		/*
+		 * 0 에서 9 사이의 랜덤한 수가 반복적으로 나오는 반복문.
+		 * 5 가 나오면 예외 발생.
+		 * 몇번째 작업에서 5 가 나왔는지 확인 가능한 코드.
+		 */
 		
 		System.out.println("main 메소드가 종료 됩니다.");
 	}

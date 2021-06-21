@@ -35,7 +35,7 @@ public class MainClass03 {
 			//실행할 미완성의 sql 문
 			String sql="INSERT INTO member"
 					+ " (num, name, addr)"
-					+ " VALUES( member_seq.NEXTVAL, ?, ?)";
+					+ " VALUES( member_seq.NEXTVAL, ?, ?)"; 
 			//PreparedStatement 객체의 참조값 얻어오기
 			pstmt=conn.prepareStatement(sql);
 			// ? 에 값을 바인딩해서 미완성의 sql 문을 완성 시킨다.
@@ -53,6 +53,12 @@ public class MainClass03 {
 			}catch(Exception e) {}
 		}
 	}
+	/*
+	 *	시퀀스 (sequence) : 자동으로 순차적으로 증가하는 순번을 반환하는 데이터 베이스 객체, 
+	 *	보통 pk (Primary key) 중복 값을 방지하기 위해 사용.
+	 *	생성 방법 : create sequence 시퀀스명;
+	 *	NEXTVAL : 해당 시퀀스의 값을 증가 시키고 싶을 때 사용.
+	 */
 }
 
 

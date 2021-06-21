@@ -15,7 +15,7 @@ public class MainClass06 {
 		OutputStreamWriter osw=new OutputStreamWriter(os);
 		BufferedWriter bw=new BufferedWriter(osw);	
 		try {
-			bw.write("하나");
+			bw.write("하나");  
 			bw.newLine(); //개행 기호 출력
 			bw.write("두울");
 			bw.newLine();
@@ -24,12 +24,13 @@ public class MainClass06 {
 			/*
 			 * 전체 출력된 내용 : 하나\r\n두울\r\n세엣
 			 * 
-			 * 위의 내용에서 이클립스의 콘솔창은 \r\n 을 출력하지 않고 해석을 해서 아래와 같이 출력한다.
+			 * 위의 내용에서 이클립스의 콘솔창은 \r\n 을 출력하지 않고 해석을 해서 아래와 같이 출력한다
 			 * 
 			 * 하나
 			 * 두울
 			 * 세엣
 			 */
+			// \t => tap 키.
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -17,7 +17,7 @@ public class MainClass13 {
 		//Set 에 저장된 item 의 갯수?
 		int size=nums.size();
 		//Set 에 저장된 item 을 모두 불러오기?
-		
+		 
 		//Iterator 반복자 객체 얻어오기 
 		Iterator<Integer> it = nums.iterator();
 		// it.hasNext() 는 커서 다음에 읽어낼 데이터가 있는 지 확인해서 있으면 true  를 
@@ -26,7 +26,7 @@ public class MainClass13 {
 			//it.next() 는 커서를 한칸 움직여서 커서가 위치한 곳의 데이터를 읽어온다. 
 			int tmp=it.next();
 			System.out.println(tmp);
-		}
+		}// while 도 반복문 => false 가 될때가지 계속 실행됨.
 		 
 	}
 }

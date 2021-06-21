@@ -1,6 +1,6 @@
 package test.mypac;
 
-// 사각형의 정보를 담을수 있는 Rect 클래스 
+//사각형의 정보를 담을수 있는 Rect 클래스 
 public class Rect {
 	//non static 필드 
 	public int width; //폭

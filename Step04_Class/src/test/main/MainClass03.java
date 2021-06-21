@@ -22,6 +22,8 @@ public class MainClass03 {
 		MyUtil.send();
 		// YourUtil 클래스의 up() 이라는 static 메소드 호출하기 
 		YourUtil.up();
+		
+		// 메소드 호출의 개념은 단순히 호출해서 안에 결과를 얻어내는 것임.
 	}
 }
 

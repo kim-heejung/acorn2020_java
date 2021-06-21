@@ -16,7 +16,7 @@ public class MainClass06 {
 		 *  useWeapon() 메소드를 호출하는게 목적이다.
 		 *  호출하려고 보니 Weapon 추상 클래스 type 객체의 참조값이 필요하다
 		 *  따라서 Weapon 추상 클래스를 상속받은 클래스를 파일로 만들어야 된다.
-		 *  근데 불금이다보니 만사가 구찮다. 클래스를 파일로 만들기 싫다
+		 *  근데 불금이다보니 만사가 귀찮다 클래스를 파일로 만들기 싫다
 		 *  내부클래스(inner class) 로 만들고 싶다. 		 
 		 */
 		Weapon w1=new YourWeapon(); // static 메소드 안에서는 내부 class 조차도 static 이 붙지 않으면 사용 불가능.

@@ -1,4 +1,4 @@
-package test.main;
+ package test.main;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

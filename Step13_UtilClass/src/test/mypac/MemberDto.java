@@ -22,8 +22,8 @@ public class MemberDto {
 	public MemberDto() {}
 
 	public MemberDto(int num, String name, String addr) {
-		super(); // 안써도됨.
-		this.num = num;
+		super(); // 부모 생성자를 명시하지 않아도 알아서 호출되므로 생략가능.
+		this.num = num; // this 를 안붙이면 .num 은 인자의 num 을 가리킴.
 		this.name = name;
 		this.addr = addr;
 	}
@@ -50,7 +50,9 @@ public class MemberDto {
 
 	public void setAddr(String addr) {
 		this.addr = addr;
-	} 
+	}
+
+	
 	// set or get + ctrl + space 의 방법도 있음.
 }
 

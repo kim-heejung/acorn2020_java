@@ -41,6 +41,11 @@ public class MyFrame extends JFrame{
 	public static void main(String[] args) {
 		new MyFrame("나의 프레임");
 	}
+	
+	/*
+	 * GUI (Graphic User Interface)
+	 * -특별한 경우를 제외하고 사용할 일이 없음.
+	 */
 }
 
 

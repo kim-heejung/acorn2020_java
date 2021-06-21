@@ -42,7 +42,7 @@ public class MainClass02 {
 			pstmt.setString(2, name);
 			pstmt.setString(3, addr);
 			// 실제로 수행하기
-			pstmt.executeUpdate();
+			pstmt.executeUpdate(); // insert, update, delete 는 executeUpdate() 를 호출하면 됨.
 			System.out.println("회원 정보를 저장했습니다.");
 		}catch(Exception e) {
 			e.printStackTrace();
